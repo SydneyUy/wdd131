@@ -38,6 +38,13 @@ h1 {
     margin-bottom: 1rem;
 }
 
+h2 {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 1.2rem;
+    
+}
+
 .hero img {
     width: 100%;
     height: auto;
@@ -58,6 +65,12 @@ table {
     margin-bottom: 1rem;
 }
 
+table tr td {
+    padding: 0.5rem;
+    margin: 1rem;
+    
+}
+
 footer {
     background-color: var(--secondary-color);
     color: var(--white);
@@ -65,7 +78,7 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     main {
         position: relative;
         display: grid;
@@ -75,5 +88,13 @@ footer {
         padding: 2rem;
         margin: 0 auto;
     }
-}
 
+    .weather-icon img {
+        display: none;
+    }
+    
+    .weather h2::after {
+        content: " ⛅";
+        font-size: 1.2rem; }
+
+}
