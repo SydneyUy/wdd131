@@ -10,80 +10,83 @@
     <script src="scripts/place.js" defer></script>
     <header>
         <h1>Madagascar</h1>
-        <div>
+        <div class="hero">
         <picture>
-            <source type="image/webp" media="(min-width: 1000px )" srcset="images">
-            <source type="image/webp" media="(min-width: 500px)" srcset="images\lemur-small.webp">
-            <!--for browsers that don't support webp-->
-            <img src="images/lemur-small.jpg" alt="small Lemur image" width="750" height="500" >
+            <source srcset="images/lemur-small.webp" type="image/webp" media="(max-width: 500px)">
+            <source srcset="images/lemur-small.jpg" media="(max-width: 500px)">
+            <source srcset="images/lemur-large.webp" type="image/webp" media="(min-width: 501px)">
+            <source srcset="images/lemur-large.jpg" media="(min-width: 501px)">
+            <img src="images/lemur-large.jpg" alt="Lemur image" width="750" height="500">
         </picture>
+            <div class="hero-overlay">
+                <section class="overlay-box data-panel">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <th>Area: </th>
+                    <td>587,041 sq km</td>
+                </tr>
+                <tr>
+                    <th>Population: </th>
+                    <td>27,691,018</td>
+                </tr>
+                <tr>
+                    <th>Capital: </th>
+                    <td>Antananarivo</td>
+                </tr>
+                <tr>
+                    <th>Language: </th>
+                    <td>Malagasy, French</td>
+                </tr>
+                <tr>
+                    <th>Currency: </th>
+                    <td>Malagasy Ariary</td>
+                </tr>
+                <tr>
+                    <th>Time Zone: </th>
+                    <td>UTC+3</td>
+                </tr>
+                <tr>
+                    <th>Calling Code: </th>
+                    <td>+261</td>
+                </tr>
+                <tr>
+                    <th>Internet TLD: </th>
+                    <td>.mg</td>
+                </tr>
+            </table>
+        </section>
+        <section class="overlay-box weather-panel">
+            <h2>Weather</h2>
+            <div id="weather-icon">
+                <img src="images/weather-icon.svg" alt="weather icon" width="120" height="150">
             </div>
-    </header>
-    <main>
-        <h2>Data</h2>
-       <table>
-        <tr>
-            <th>Area: </th>
-            <td>587,041 sq km</td>
-        </tr>
-        <tr>
-            <th>Population: </th>
-            <td>27,691,018</td>
-        </tr>
-        <tr>
-            <th>Capital: </th>
-            <td>Antananarivo</td>
-        </tr>
-        <tr>
-            <th>Language: </th>
-            <td>Malagasy, French</td>
-        </tr>
-        <tr>
-            <th>Currency: </th>
-            <td>Malagasy Ariary</td>
-        </tr>
-        <tr>
-            <th>Time Zone: </th>
-            <td>UTC+3</td>
-        </tr>
-        <tr>
-            <th>Calling Code: </th>
-            <td>+261</td>
-        </tr>
-        <tr>
-            <th>Internet TLD: </th>
-            <td>.mg</td>
-        </tr>
-       </table>
-       <div id="weather">
-        <h2>Weather</h2>
-        <div id="weather-icon">
-            <img src="images/weather-icon.svg" alt="weather icon" width="120px" height="150px">
+            <table>
+                <tr>
+                    <th>Temperature: </th>
+                    <td>10°C</td>
+                </tr>
+                <tr>
+                    <th>Condition: </th>
+                    <td>Cloudy</td>
+                </tr>
+                <tr>
+                    <th>Wind speed: </th>
+                    <td>5 km/h</td>
+                </tr>
+                <tr>
+                    <th>Humidity: </th>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <th>Wind Chill:</th>
+                    <td id="wind-chill">0°C</td>
+                </tr>
+            </table>
+        </section>
+            </div>
         </div>
-        <table>
-        <tr>
-            <th>Temperature: </th>
-            <td>10°C</td>
-        </tr>
-        <tr>
-            <th>Condition: </th>
-            <td>Cloudy</td>
-        </tr>
-        <tr>
-            <th>Wind speed: </th>
-            <td>5 km/h</td>
-        </tr>
-        <tr>
-            <th>Humidity: </th>
-            <td>80%</td>
-        </tr>
-        <tr>
-            <th>Wind Chill:</th>
-            <td id="wind-chill">0°C</td>
-        </tr>
-        </table>
-       </div>
-    </main>
+    </header>
     <footer>
         <p>&copy; 2026 Sydney Uy <br> Last Modification: 
             <span id="modified-date">0/0/00 0:00:00 AM</span></p>
