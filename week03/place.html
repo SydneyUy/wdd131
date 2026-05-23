@@ -13,9 +13,11 @@
         <div class="hero">
         <picture>
             <source srcset="images/lemur-small.webp" type="image/webp" media="(max-width: 500px)">
-            <source srcset="images/lemur-small.jpg" media="(max-width: 500px)">
             <source srcset="images/lemur-large.webp" type="image/webp" media="(min-width: 501px)">
-            <source srcset="images/lemur-large.jpg" media="(min-width: 501px)">
+            <!-- Fallback for browsers that do not support WebP -->
+            <source srcset="images/lemur-small.jpg" alt="Lemur image" width="500" height="333" media="(max-width: 500px)">
+            <source srcset="images/lemur-large.jpg" alt="Lemur image" width="750" height="500" media="(min-width: 501px)">
+            <!--img fallback-->
             <img src="images/lemur-large.jpg" alt="Lemur image" width="750" height="500">
         </picture>
             <div class="hero-overlay">
