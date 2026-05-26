@@ -1,0 +1,36 @@
+:root {
+    --primary: #000;
+    --secondary: #555;
+    --zebra: #f2f2f2;
+    --text: #FFF;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+thead, tbody {
+    border: 1px solid var(--primary);
+}
+
+thead {
+    font-size: 20px;
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+thead tr {
+    background-color: var(--secondary);
+    color: var(--text);
+}
+
+tbody tr {
+    color: var(--primary);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+}
+
