@@ -1,12 +1,17 @@
+
 * {
     margin: 0;
     padding: 0;
 }
 
+body {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
     padding: 1rem;
     text-align: left;
-    color: #eee;
 }
 
 nav {
@@ -33,7 +38,6 @@ nav.show {
 
 .navigation a {
     display: block;
-    color: #eee;
     text-decoration: none;
     font-weight: 700;
     padding: 0.75rem 1rem;
@@ -41,9 +45,7 @@ nav.show {
 }
 
 .navigation a:hover {
-    text-decoration: none;
-    color: #05d4f0;
-}
+    text-decoration: none; }
 
 #menu {
     display: block;
@@ -51,8 +53,6 @@ nav.show {
     font-weight: 700;
     text-decoration: none;
     padding: 0.5rem 0.75rem;
-    background-color: #eee;
-    color: #000;
 }
 
 #menu::before {
