@@ -1,0 +1,1 @@
+console.log(filterItems(names, "B"));
