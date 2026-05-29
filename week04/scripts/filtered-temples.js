@@ -70,7 +70,9 @@ const temples = [
   // Add more temple objects here...
 ];
 
-function renderSections(temples) {
+
+
+function home(temples) {
     const div = document.querySelector("main");
     let rows = "";
     for (const temple of temples) {
@@ -86,4 +88,12 @@ function renderSections(temples) {
     div.innerHTML = rows;
 }
 
-renderSections(temples);
+function oldTemples(temples) {}
+
+function newTemples(temples) {}
+
+function largeTemples(temples) {}
+
+function smallTemples(temples) {}
+
+home(temples);

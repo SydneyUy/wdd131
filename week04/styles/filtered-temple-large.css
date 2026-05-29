@@ -13,9 +13,8 @@ main {
 }
 
 .navigation a:hover {
-    text-decoration: none;
+text-decoration: none;
 color: #05d4f0;
-
 }
 
 figure {
