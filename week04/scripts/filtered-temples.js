@@ -86,7 +86,19 @@ function renderSections(temples) {
 renderSections(temples);
 
 const oldtemplink = document.querySelector('#old');
+const newtemplink = document.querySelector('#new');
+const largetemplink = document.querySelector('#large');
+const smalltemplink = document.querySelector('#small');
 
-oldtemplink.addEventListener('click', () => {
-    renderSections(temples.filter(temple => new Date(temple.dedicated) < new Date('2000-01-01')));
-});
+function attachFilter(link, predicate) {
+    if (!link) return;
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        renderSections(temples.filter(predicate));
+    });
+}
+
+attachFilter(oldtemplink, temple => new Date(temple.dedicated) < new Date('2000-01-01'));
+attachFilter(newtemplink, temple => new Date(temple.dedicated) > new Date('2000-01-01'));
+attachFilter(largetemplink, temple => temple.area > 90000);
+attachFilter(smalltemplink, temple => temple.area < 10000);
