@@ -15,6 +15,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#menu {
+    display: none;
+}
+
+
 h1 {
     background-color: var(--primary-color);
     color: var(--text-colorwhite);
@@ -22,39 +27,29 @@ h1 {
     text-align: center;
 }
 
-
 nav {
-    display: none;
     background-color: var(--secondary-color);
     padding: 0.5rem;
 }
 
-nav.show {
-    display: block;
+nav ul {
+    list-style: none; 
+    display: flex;  
 }
 
-.navigation {
-    width: 100%;
-}
-
-.navigation ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.navigation li {
-    margin: 0;
+nav li {
+    cursor: pointer;
 }
 
 .navigation a {
     display: block;
     text-decoration: none;
     font-weight: 700;
-    padding: 0.75rem 1rem;
-    text-align: left;
+    padding: 0.5rem 0.75rem;
+    text-align: center;
     color: var(--text-colorwhite);
 }
+
 
 .navigation a:hover {
     text-decoration: none;
@@ -68,32 +63,63 @@ img {
 }
 
 
-@media (min-width: 500px) {
 
-    .show {
+@media only screen and (max-width: 500px) {
+
+    #menu {
     display: block;
-}
+    background: none;
+    border: none;
+    color: var(--text-colorwhite);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+   }
 
+    .navigation li {
+        display: none;
+        padding: 0.75rem;
+    }
+
+    .navigation a {
+	display: block; 
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .show li {
+	display: block;
+    }
 
     h1 {
         font-size: 2rem;
     }
 
-    nav {
-        display: block;
+    #menu.show::before {
+      content: "X";
     }
 
-    .navigation ul {
-        display: flex;
-        justify-content: center;
+    #menu::before {
+	   content: "≡";
     }
 
-    .navigation li {
-        flex: 1 1 auto;
+    .hero img {
+        width: 100%;
+        height: auto;
     }
 
-    .navigation a {
-        text-align: center;
+    .hero-overlay {
+        position: static;
+        grid-template-columns: 1fr;
+        top: auto;
+        left: auto;
+        right: auto;
+        z-index: auto;
+        margin-top: -2rem;
     }
 }
 

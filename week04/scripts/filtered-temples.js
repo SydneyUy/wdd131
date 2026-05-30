@@ -6,6 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+const mainnav = document.querySelector('.navigation');
+const hambutton = document.querySelector('#menu');
+
+hambutton.addEventListener('click', () => {
+	mainnav.classList.toggle('show');
+	hambutton.classList.toggle('show');
+});
+
 
 const temples = [
   {
@@ -85,6 +93,7 @@ function renderSections(temples) {
 
 renderSections(temples);
 
+const hometemplink = document.querySelector('#home');
 const oldtemplink = document.querySelector('#old');
 const newtemplink = document.querySelector('#new');
 const largetemplink = document.querySelector('#large');
@@ -95,6 +104,13 @@ function attachFilter(link, predicate) {
     link.addEventListener('click', (event) => {
         event.preventDefault();
         renderSections(temples.filter(predicate));
+    });
+}
+
+if (hometemplink) {
+    hometemplink.addEventListener('click', (event) => {
+        event.preventDefault();
+        renderSections(temples);
     });
 }
 
