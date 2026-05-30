@@ -1,14 +1,11 @@
-const moddate = new Date(document.lastModified);
-document.getElementById('modified-date').textContent = moddate.toLocaleDateString();
-
-const mainnav = document.querySelector('.navigation');
-const hambutton = document.querySelector('#menu');
-
-hambutton.addEventListener('click', (event) => {
-    event.preventDefault();
-    const isOpen = mainnav.classList.toggle('show');
-    hambutton.classList.toggle('show', isOpen);
+document.addEventListener('DOMContentLoaded', () => {
+    const moddate = new Date(document.lastModified);
+    const modifiedDateEl = document.getElementById('modified-date');
+    if (modifiedDateEl) {
+        modifiedDateEl.textContent = moddate.toLocaleString();
+    }
 });
+
 
 const temples = [
   {
@@ -68,11 +65,9 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
   // Add more temple objects here...
-];
+]
 
-
-
-function home(temples) {
+function renderSections(temples) {
     const div = document.querySelector("main");
     let rows = "";
     for (const temple of temples) {
@@ -88,12 +83,10 @@ function home(temples) {
     div.innerHTML = rows;
 }
 
-function oldTemples(temples) {}
+renderSections(temples);
 
-function newTemples(temples) {}
+const oldtemplink = document.querySelector('#old');
 
-function largeTemples(temples) {}
-
-function smallTemples(temples) {}
-
-home(temples);
+oldtemplink.addEventListener('click', () => {
+    renderSections(temples.filter(temple => new Date(temple.dedicated) < new Date('2000-01-01')));
+});
