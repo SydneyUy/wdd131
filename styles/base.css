@@ -9,8 +9,8 @@
     --text-colorwhite: #fff;
 }
 
-:hover {
-    color: var(--text-colorwhite);
+a:hover {
+    color: #c5df33;
     background-color: var(--primary-color);
     transition: 0.3s;
 }
@@ -50,14 +50,18 @@ main {
     gap: 1rem;
 }
 
-main h1 {
-    grid-column: 1 / -1;
+h1 {
     text-align: center;
-    margin: 10px 0;
-
+    padding: 1rem;
 }
 
-h2 {
+main h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card h2 {
     background-color: var(--primary-color);
     color: var(--text-colorwhite);
     padding: 1rem;
