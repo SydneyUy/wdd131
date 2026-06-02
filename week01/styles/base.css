@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #0b4d47;
+    --secondary-color: #3d835d;
+    --text-colorwhite: #fff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    font-size: 12px;
+    background-color: var(--primary-color);
+    color: var(--text-colorwhite);
+    padding: 1rem;
+    text-align: center;
+}
+
+header span {
+    display: block;
+}
+
+nav {
+    display: flex;
+    flex: 1 1 100%;
+    background-color: var(--secondary-color); }
+
+nav a {
+    text-decoration: none;
+    font-weight: 300;
+    padding: 0.7rem 5em;
+    color: var(--text-colorwhite);
+}
+
+main {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: 1fr 300px;
+    gap: 1rem;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 10px 0;
+
+}
+
+h2 {
+    background-color: var(--primary-color);
+    color: var(--text-colorwhite);
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin: 2px;
+    padding: 0.5px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 6px;
+}
+
+p {
+    margin: 0.5rem 0;
+    letter-spacing: 0.5px; }
+
+.card img {
+    border: 1px solid var(--primary-color);
+}
+
+main ul {
+    margin: 8rem 2rem;
+
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-colorwhite);
+    text-align: center;
+    padding: 1rem;
+}
