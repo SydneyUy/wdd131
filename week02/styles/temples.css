@@ -1,98 +1,48 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    padding: 1rem;
-    text-align: left;
-    color: #eee;
-}
-
-nav {
-    display: none;
-}
-
-nav.show {
-    display: block;
-}
-
-.navigation {
-    width: 100%;
-}
-
-.navigation ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.navigation li {
-    margin: 0;
-}
-
-.navigation a {
-    display: block;
-    color: #eee;
-    text-decoration: none;
-    font-weight: 700;
-    padding: 0.75rem 1rem;
-    text-align: left;
-}
-
-.navigation a:hover {
-    text-decoration: none;
-    color: #05d4f0;
-}
-
-#menu {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    text-decoration: none;
-    padding: 0.5rem 0.75rem;
-    background-color: #eee;
-    color: #000;
-}
-
-#menu::before {
-    content: "≡";
-}
-
-#menu.show::before {
-    content: "X";
-}
-
-@media (min-width: 500px) {
-
-    .show {
-    display: block;
-}
-
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    nav {
-        display: block;
-    }
-
-    .navigation ul {
-        display: flex;
-        justify-content: center;
-    }
-
-    .navigation li {
-        flex: 1 1 auto;
-    }
-
-    .navigation a {
-        text-align: center;
-    }
+@media only screen and (max-width: 500px) {
 
     #menu {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: center;
+   }
+
+    #menu.show::before {
+      content: "X";
+    }
+
+    #menu::before {
+	   content: "≡";
+    }
+
+    nav li {
         display: none;
+
+    }
+
+    nav a {
+	display: block; 
+    text-decoration: none;
+    }
+
+    .show li {
+	display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figure {
+        text-align: center;
     }
 }
 
