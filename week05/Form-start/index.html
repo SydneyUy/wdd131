@@ -52,13 +52,13 @@
     <form method="get" action="thanks.html" class="wf1">
         <fieldset>
             <legend>Applicant Information</legend>
+       
+            <label>First Name*<input type="text" name="fname" required></label>
+            <label>Last Name*<input type="text" name="lname" required></label>
+            <label>Phone<input type="text" name="tel" placeholder="123-456-7890"></label>
+            <label>Email*<input type="email" name="email" placeholder="you@example.com" required></label>
+            <label>Website<input type="text" name="website" placeholder="https://"></label>
         </fieldset>
-        <label>First Name*<input type="text" name="fname" required></label>
-        <label>Last Name*<input type="text" name="lname" required></label>
-        <label>Phone<input type="text" name="tel" placeholder="123-456-7890"></label>
-        <label>Email*<input type="email" name="email" placeholder="you@example.com" required></label>
-        <label>Website<input type="text" name="website" placeholder="https://"></label>
-
         <fieldset>
             <legend>Course Information</legend>
             <div>Audience: </div>
@@ -67,10 +67,10 @@
             <label><input type="radio" name="audience" value="advanced"> Advanced</label>
 
             <div>Software Needed: </div>
-            <label><input type="checkbox" name="code" value="yes">Coding</label>
-            <label><input type="checkbox" name="client" value="yes">FTP client</label>
-            <label><input type="checkbox" name="editing" value="yes">Photo Editing</label>
-            <label><input type="checkbox" name="process" value="yes">Preprocessor</label>
+<label><input type="checkbox" name="features" value="coding">Coding</label>
+<label><input type="checkbox" name="features" value="ftp_client">FTP client</label>
+<label><input type="checkbox" name="features" value="photo_editing">Photo Editing</label>
+<label><input type="checkbox" name="features" value="preprocessor">Preprocessor</label>
 
         </fieldset>
 
