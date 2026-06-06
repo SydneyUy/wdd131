@@ -25,11 +25,11 @@
 
         <fieldset>
             <legend>Overall Rating</legend>
-            <label><input type="radio"id="rating" name="rating" value="&star;" required>&star;</label>
-            <label><input type="radio" id="rating" name="rating" value="&star; &star;" required>&star; &star;</label>
-            <label><input type="radio" id="rating" name="rating" value="&star; &star; &star;" required>&star; &star; &star;</label>
-            <label><input type="radio" id="rating" name="rating" value="&star; &star; &star; &star;" required>&star; &star; &star; &star;</label>
-            <label><input type="radio" id="rating" name="rating" value="&star; &star; &star; &star; &star;" required>&star; &star; &star; &star; &star;</label>
+            <label><input type="radio" id="one-rating" name="rating" value="&star;" required>&star;</label>
+            <label><input type="radio" id="two-rating" name="rating" value="&star; &star;" required>&star; &star;</label>
+            <label><input type="radio" id="three-rating" name="rating" value="&star; &star; &star;" required>&star; &star; &star;</label>
+            <label><input type="radio" id="four-rating" name="rating" value="&star; &star; &star; &star;" required>&star; &star; &star; &star;</label>
+            <label><input type="radio" id="five-rating" name="rating" value="&star; &star; &star; &star; &star;" required>&star; &star; &star; &star; &star;</label>
         </fieldset>
 
         <fieldset>
@@ -39,17 +39,17 @@
 
         <fieldset>
             <legend>Useful Features</legend>
-            <p>Which features did you find useful in the product? <i>(Check all that apply.)</i><p></label>
-            <label><input type="checkbox" id="feat" name="features" value="durability">Durability</label>
-            <label><input type="checkbox" id="feat" name="features" value="Ease">Ease of Use</label>
-            <label><input type="checkbox" id="feat" name="features" value="Performance">Performance</label>
-            <label><input type="checkbox" id="feat" name="features" value="Design">Design</label>
+            <p>Which features did you find useful in the product? <i>(Check all that apply.)</i><p>
+            <label><input type="checkbox" id="durability" name="features" value="durability">Durability</label>
+            <label><input type="checkbox" id="ease" name="features" value="Ease">Ease of Use</label>
+            <label><input type="checkbox" id="performance" name="features" value="Performance">Performance</label>
+            <label><input type="checkbox" id="design" name="features" value="Design">Design</label>
         </fieldset>
 
         <fieldset>
             <legend>Written Review (Optional)</legend>
             <textarea id="review" name="review" rows="4" cols="20"></textarea>
-            <legend>Username (Optional)</legend>
+            <label>Username (Optional)</label>
             <input type="text">
 
         </fieldset>
