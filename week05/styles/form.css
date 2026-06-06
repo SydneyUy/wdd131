@@ -97,3 +97,26 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+@media (max-width: 500px) {
+
+   
+    form legend, form label {
+    font-size: 1.2rem;
+    }
+
+    form input[type="date"] {
+    margin: 12px;
+    padding: 12px;
+        
+    }
+
+    form input[type="radio"], form input[type="checkbox"] {
+    margin: 10px;
+    }
+
+    form input[type="text"] {
+       padding: 1.3px;
+    }
+
+}
