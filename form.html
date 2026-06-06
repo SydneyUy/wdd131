@@ -17,7 +17,7 @@
         <form method="get" action="review.html">
         <fieldset>
             <legend>Select Product</legend>
-            <select id="product" name="product" required>
+            <option value="">Please Select &#9662;</option>
             </select>
         </fieldset>
 
@@ -25,11 +25,11 @@
             <legend>Rating</legend>
             <label>Overall Rating</label>
             <br>
-           <label><input type="radio" id="rating" name="rating" value="&star;" required>&star;</label>
-            <label><input type="radio" id="rating" name="rating" value="&star; &star;" required>&star; &star;</label>
-            <label><input type="radio" id="rating" name="rating" value="&star; &star; &star;" required>&star; &star; &star;</label>
-            <label><input type="radio" id="rating" name="rating" value="&star; &star; &star; &star;" required>&star; &star; &star; &star;</label>
-            <label><input type="radio" id="rating" name="rating" value="&star; &star; &star; &star; &star;" required>&star; &star; &star; &star; &star;</label>
+           <label  id="one-rating" name="one-rating"><input type="radio" value="&star;" required>&star;</label>
+            <label id="two-rating" name="two-rating"><input type="radio" value="&star; &star;" required>&star; &star;</label>
+            <label id="three-rating" name="three-rating"><input type="radio" value="&star; &star; &star;" required>&star; &star; &star;</label>
+            <label id="four-rating" name="four-rating"><input type="radio" value="&star; &star; &star; &star;" required>&star; &star; &star; &star;</label>
+            <label id="five-rating" name="five-rating"><input type="radio"  value="&star; &star; &star; &star; &star;" required>&star; &star; &star; &star; &star;</label>
         </fieldset>
 
         <fieldset>
@@ -66,5 +66,6 @@
         <p>&copy; 2026 Sydney Uy <br> Last Modification: 
         <span id="modified-date">0/0/00 0:00:00 AM</span></p>
     </footer>
+    <script src="scripts/form.js"></script>
 </body>
 </html>
