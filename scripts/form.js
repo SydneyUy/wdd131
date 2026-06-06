@@ -48,21 +48,14 @@ renderSections(products);
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Get the current review count from localStorage (returns a string or null)
     let reviewCount = localStorage.getItem("reviewCount");
 
-    // 2. Convert to an integer. If it doesn't exist yet, default to 0.
     reviewCount = reviewCount ? parseInt(reviewCount, 10) : 0;
 
-    // 3. Increment the counter by 1
     reviewCount += 1;
 
-    // 4. Save the updated count back to localStorage
     localStorage.setItem("reviewCount", reviewCount);
 
-    // Optional: Log it to the console or display it on the page to verify it works
     console.log(`Total reviews completed: ${reviewCount}`);
     
-    // If you have an element to show the total, you could do:
-    // document.querySelector("#counter-display").textContent = reviewCount;
 });
