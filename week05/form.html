@@ -10,7 +10,6 @@
     <title>Product Review Form</title>
 </head>
 <body>
-    <script src="scripts/form.js" defer></script>
     <header>
         <h1>Product Review Form</h1>
     </header>
@@ -25,7 +24,7 @@
         <fieldset>
             <legend>Rating</legend>
             <label>Overall Rating</label>
-
+            <br>
            <label><input type="radio" id="rating" name="rating" value="&star;" required>&star;</label>
             <label><input type="radio" id="rating" name="rating" value="&star; &star;" required>&star; &star;</label>
             <label><input type="radio" id="rating" name="rating" value="&star; &star; &star;" required>&star; &star; &star;</label>
@@ -41,6 +40,7 @@
         <fieldset>
             <legend>Useful Features</legend>
             <label>Which features did you find useful in the product? <i>(Check all that apply.)</i></label>
+            <br>
             <label><input type="checkbox" id="feat" name="features" value="durability">Durability</label>
             <label><input type="checkbox" id="feat" name="features" value="Ease">Ease of Use</label>
             <label><input type="checkbox" id="feat" name="features" value="Performance">Performance</label>
@@ -50,8 +50,9 @@
         <fieldset>
             <legend>Written Review (Optional)</legend>
             <textarea id="review" name="review"></textarea>
-
+            <br>
             <label>Username (Optional)</label>
+            <br>
             <input type="text">
 
         </fieldset>
@@ -63,7 +64,7 @@
     </main>
     <footer>
         <p>&copy; 2026 Sydney Uy <br> Last Modification: 
-            <span id="modified-date">0/0/00 0:00:00 AM</span></p>
+        <span id="modified-date">0/0/00 0:00:00 AM</span></p>
     </footer>
 </body>
 </html>
