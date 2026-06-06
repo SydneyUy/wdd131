@@ -25,6 +25,11 @@ form {
     padding: 1rem;
 }
 
+p {
+    padding: 4px;
+    font-size: 15px;
+}
+
 
 form legend, form label {
     display: block;
