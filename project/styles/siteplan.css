@@ -21,8 +21,12 @@ ul {
     Font-weight: 300;
 }
 
-img {
+main img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+}
+
+footer nav li {
+    text-decoration: none;
+     list-style: none; 
 }
