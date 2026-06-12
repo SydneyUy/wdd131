@@ -15,7 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/oryx-small.css">
+    <link rel="stylesheet" href="styles/oryx.css">
 
     <title>White Oryx Middle East Tours</title>
 </head>
@@ -49,27 +50,28 @@
         <label>Lorem ipsum dolor sit amet consectetur adipisicing elit.</label>
 
         <fieldset>
-            <label>First Name</label>
+            <label>First Name *</label>
             <input type="text">
-            <label>Email Address</label>
+            <label>Email Address *</label>
             <input type="text">
         </fieldset>
 
         <fieldset>
-            <label>Subject *</label>
-            <input type="text">
-            <legend>Message (Oprional)</legend>
+            <legend>Content</legend>
+
+            <label>Subject</label>
+            <select id="product" name="product" required>
+            <option value="" disabled selected>Select a Product&#9662;</option>
+            </select>
+
+            <label>Message</label>
             <textarea id="review" name="review" rows="4" cols="20"></textarea>
+            
         </fieldset>
     </form>
     </main>
     <footer>
         <p>&copy; 2026 Sydney Uy <br> Last Modification: <span id="modified-date"></span></p>
-        <ul>
-                <li><a src="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook logo" width="70" height="70"></a></li>
-                <li><a src="https://www.instagram.com/"><img src="images/instagram.png" alt="facebook logo" width="70" height="70"></a></li>
-                <li><a src="https://www.linkedin.com/"><img src="images/linkdin.png" alt="facebook logo" width="70" height="70"></a></li>
-        </ul>
     </footer>
 </body>
 </html>
