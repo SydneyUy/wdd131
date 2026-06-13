@@ -128,14 +128,3 @@ footer {
     padding: 12px;
 }
 
-@keyframes fade {
-    0% {opacity: 0;}
-    
-    100% {opacity: 1;}
-}
-
-/* animation for photots
--home page border and area
--grid in explore
--grid in contact
--map in contact */

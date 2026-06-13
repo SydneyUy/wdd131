@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sydney Uy">
-    <meta name="description" content="This is a site provides information about the education center, The Abrahamic Family House.">
+    <meta name="description" content="This is a site provides information about the education center, White Oryx Middle East Tours.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/oryx-small.css">
+    <link rel="stylesheet" href="styles/oryx-form.css">
     <link rel="stylesheet" href="styles/oryx.css">
 
     <title>White Oryx Middle East Tours</title>
@@ -34,40 +35,41 @@
         </nav>
     </header>
     <main>
+    <div id="contact">
+        <div id="map">
         <h1>Contact Us</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nemo.</p>
+        <p>Google Maps can be used to provide directions to the Main Entrance and Parking:</p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84479.30954595223!2d54.37683563127713!3d24.541949134124227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e5df7ae201b61%3A0x61df06dacb77f51e!2sSaadiyat%20Island!5e0!3m2!1sen!2sae!4v1781355199285!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <article>
             <h2>Office Hours</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, nisi?</p>
+            <p>Weekdays || 7:30am-3:00pm<br>Weekends || 7:30am-12:00pm</p>
 
             <h2>Main Office</h2>
             <p>PO Box 000000<br>Abu Dhabi, UAE<br>+97155000000<br>contact@oryxtours.ae</p>
-        </article>
+        </div>
     <form>
-        <legend>Contact Form</legend>
-        <label>Lorem ipsum dolor sit amet consectetur adipisicing elit.</label>
+        <h2>Contact Form</h2> 
+        <p>Have Feedback? Complaints? Suggestions? Let us know.</p>
 
         <fieldset>
-            <label>First Name *</label>
+            <legend>Personal Info</legend> <label>First Name *</label>
             <input type="text">
             <label>Email Address *</label>
             <input type="text">
         </fieldset>
 
         <fieldset>
-            <legend>Content</legend>
-
+            <legend>Content</legend> 
+            
             <label>Subject</label>
             <select id="product" name="product" required>
-            <option value="" disabled selected>Select a Product&#9662;</option>
+                <option value="" disabled selected>Select a Product▾</option>
             </select>
 
             <label>Message</label>
             <textarea id="review" name="review" rows="4" cols="20"></textarea>
-            
         </fieldset>
     </form>
+    </div>
     </main>
     <footer>
         <p>&copy; 2026 Sydney Uy <br> Last Modification: <span id="modified-date"></span></p>

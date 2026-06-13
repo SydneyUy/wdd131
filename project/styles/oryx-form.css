@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --heading-font-one: Arial, Helvetica, sans-serif;
+    --heading-font-two: 'Montserrat', Tahoma, Verdana, sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#map {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+form {
+    grid-column: 2;
+    grid-row: 1;
+    padding-top: 10rem;
+}
+
+fieldset, legend, label {
+    font-family: var(--paragraph-font);
+    padding: 12px;
+}
+
+input[type="text"],textarea {
+    border-radius: 6px;
+}
