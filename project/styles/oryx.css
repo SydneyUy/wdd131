@@ -29,13 +29,34 @@ h2 {
 }
 
 main img {
-    width: 100%;
+    width: 80%;
     height: auto;
+    padding: 2fr;
+    margin: 30px 17rem;
+    border: 2px solid black;
 }
 
-article img {
-    width: 20%;
-    border: 2px solid black;
+#opening {
+    position: relative;
+    display: inline-block;
+}
+
+#opening img {
+    display: block;
+}
+
+#opening p {
+    position: absolute;
+    top: 30rem;
+    right: 20rem;
+    left: 35rem;
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+    font-family: var(--heading-font-two);
+    color: rgb(0, 0, 0);
+    background-color: rgba(211, 211, 211, 0.8);
+
 }
 
 header {
@@ -62,6 +83,37 @@ a:hover {
     color: darkgrey;
 }
 
+article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+article h2 {
+    grid-column: span 3;
+}
+
+article img {
+    width: 40%;
+    height: auto;
+    border: 2px solid black;
+    margin: 4px 4rem;
+}
+
+button {
+    border: none;
+    background-image: linear-gradient( #000000,#222120);
+    border-radius: 6px;
+    padding: .8rem;
+    margin: 12px;
+    max-width: 400px;
+    box-shadow: 1px 1px 4px #999;
+}
+
+button a {
+    color: white;
+}
 
 footer {
     background-color: black;
@@ -75,3 +127,9 @@ footer {
     
     100% {opacity: 1;}
 }
+
+/* animation for photots
+-home page border and area
+-grid in explore
+-grid in contact
+-map in contact */
