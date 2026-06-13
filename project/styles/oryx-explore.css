@@ -20,3 +20,11 @@ main img {
     max-height: 14rem;
     animation: fade 6s ;
 }
+
+@media only screen and (max-width: 500px) {
+    main img {
+        width: 50%;
+    }
+
+
+}

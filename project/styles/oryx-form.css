@@ -20,6 +20,7 @@
     grid-row: 1;
 }
 
+
 form {
     grid-column: 2;
     grid-row: 1;
@@ -29,8 +30,77 @@ form {
 fieldset, legend, label {
     font-family: var(--paragraph-font);
     padding: 12px;
+    display: block;
+    font-size: 1rem;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: solid 1px #3d3b3b;
+    border-radius: 6px;
+    padding: .5rem 2%
 }
 
 input[type="text"],textarea {
     border-radius: 6px;
+}
+
+
+form input[type="text"],
+form select{
+    background-color: #eee;
+    display: block;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+form input[type="submit"] {
+    border: none;
+    background-image: linear-gradient( #000000,#2c2c2c);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    font-size: 20px;
+    max-width: 400px;
+    margin: 2rem 6rem;
+    box-shadow: 1px 1px 4px #999;
+
+}
+
+@media only screen and (max-width: 500px) {
+    #contact {
+        display: block;
+    }
+
+    form input[type="submit"] {
+    font-size: 15px;
+    margin: 1rem;
+    max-width: 200px;
+    width: 96%;
+
+   }
+   #map iframe {
+    width: 60%;
+    height: auto;
+    margin-bottom: 2rem;
+   }
+
+   fieldset, legend, label {
+    padding: 3px; 
+    max-width: 20rem;}
+
+    form fieldset {
+    margin-left: 10px;
+    border: solid 1px #3d3b3b;
+    border-radius: 6px;
+    padding: .5rem;
+    }
+
+
 }

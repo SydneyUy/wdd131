@@ -45,14 +45,17 @@ p {
 
 #opening img {
     display: block;
-    width: 100%;
+    max-width: 96%;
     height: auto;
     border: 2px solid black;
+    margin: 10px auto 10px auto;
 }
 
 #opening p {
     position: absolute;
     top: 20em;
+    right: 20rem;
+
     text-align: center;
     font-family: var(--heading-font-two);
     color: rgb(0, 0, 0);
