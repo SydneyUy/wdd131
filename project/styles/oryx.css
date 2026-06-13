@@ -26,14 +26,16 @@ h1 {
 
 h2 {
     font-family: var(--heading-font-two);
+    text-align: center;
 }
 
-main img {
-    width: 80%;
-    height: auto;
-    padding: 2fr;
-    margin: 30px 17rem;
-    border: 2px solid black;
+p {
+    display: block;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-size: 20px;
+
 }
 
 #opening {
@@ -43,16 +45,15 @@ main img {
 
 #opening img {
     display: block;
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
 }
 
 #opening p {
     position: absolute;
-    top: 30rem;
-    right: 20rem;
-    left: 35rem;
-    padding: 15px;
+    top: 20em;
     text-align: center;
-    font-size: 25px;
     font-family: var(--heading-font-two);
     color: rgb(0, 0, 0);
     background-color: rgba(211, 211, 211, 0.8);
@@ -87,7 +88,6 @@ article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-
 }
 
 article h2 {
@@ -95,10 +95,16 @@ article h2 {
 }
 
 article img {
-    width: 40%;
+    width: 60%;
     height: auto;
     border: 2px solid black;
-    margin: 4px 4rem;
+    margin: 28px 4rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 button {
@@ -119,7 +125,7 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 12px;
 }
 
 @keyframes fade {
